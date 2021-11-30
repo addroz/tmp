@@ -1,3 +1,3 @@
-# Token:
+# pandas cheat:
 
-24094549-373a-4c3a-9c2a-4cea55e76617
+pandas_df = pandas_df[pandas_df.columns.intersection(final_table_columns)]
