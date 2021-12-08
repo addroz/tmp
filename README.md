@@ -1,3 +1,4 @@
-# pandas cheat:
 
-pandas_df = pandas_df[pandas_df.columns.intersection(final_table_columns)]
+First data: https://zenodo.org/record/3574566#.YaSWFdDMKUk
+
+Second data: https://github.com/wri/global-power-plant-database/blob/master/README.md
