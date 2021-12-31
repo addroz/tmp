@@ -3,6 +3,8 @@ First data: https://zenodo.org/record/3574566#.YaSWFdDMKUk
 
 Second data: https://github.com/wri/global-power-plant-database/blob/master/README.md
 
+Third data: https://data.open-power-system-data.org/conventional_power_plants/
+
 for i in range(21):
     sys.stdout.write('\r')
     # the exact output you're looking for:
