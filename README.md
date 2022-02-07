@@ -1,3 +1,7 @@
-df['DiffHeartRate']=(df.groupby(['Disease', 'State', 
-          (df.MonthStart.dt.month.ne(df.MonthStart.dt.month.shift()+1)).cumsum()])['HeartRate']
- .apply(lambda x: x.diff())).fillna(df.HeartRate)
+df.sort(['ticker', 'date'], inplace=True)
+
+# for this example, with diff, I think this syntax is a bit clunky
+# but for more general examples, this should be good.  But can we do better?
+df['diffs'] = df.groupby(['ticker'])['value'].transform(lambda x: x.diff()) 
+
+df.sort_index(inplace=True)
